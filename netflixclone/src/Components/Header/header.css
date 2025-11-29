@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: transparent; */
     background-color: rgb(20,20,20);
-    background-color: transparent;
     height: 10vh;
     color: white;
     transition: all 0.5s;
