@@ -5,6 +5,17 @@
   color: white;
   object-fit: cover;
 }
+/* margin-top: -10vh;
+Moves the banner upward slightly.b/c we need the navbar at the top overlaps with the banner.
+
+height: 80vh;
+The banner takes 80% of the full screen height.
+(vh = viewport height)
+
+object-fit: cover;
+Makes background images cover the whole area without stretching weirdly. */
+/* cover → “fill and crop if needed”
+contain → “fit fully, show all, but may leave empty space” */
 
 .banner-contents {
   margin-left: 30px;

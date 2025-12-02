@@ -9,9 +9,11 @@
     height: 10vh;
     color: white;
     transition: all 0.5s;
+    /* to animate every CSS property */
     transition-timing-function: ease-in;
+   /* controls HOW the animation moves-->its the speed curve/timing functions -->Starts slow → ends fast */
     z-index: 1;
-    /* background-color: red; */
+    
 }
 .leftside ul{
     width: 140%;

@@ -15,14 +15,11 @@ const RowList = () => {
       <SingleRow title="Action Movies" fetchUrl={requests.fetchActionMovies} />
       <SingleRow title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
       <SingleRow title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
-      <SingleRow
-        title="Romance Movies"
-        fetchUrl={requests.fetchRomanceMovies}
-      />
+      <SingleRow title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <SingleRow title="TV Shows" fetchUrl={requests.fetchTvShow} />
       <SingleRow title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </>
   );
 }
 
-export default RowList
+export default RowList;

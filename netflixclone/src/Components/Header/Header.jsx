@@ -24,18 +24,10 @@ const Header = () => {
         </div>
         <div className="rightside">
           <ul>
-            <li>
-              <SearchIcon />
-            </li>
-            <li>
-              <NotificationsNoneIcon />
-            </li>
-            <li>
-              <AccountBoxIcon />
-            </li>
-            <li>
-              <ArrowDropDownIcon />
-            </li>
+            <li> <SearchIcon /></li>
+            <li> <NotificationsNoneIcon /></li>
+            <li> <AccountBoxIcon /></li>
+            <li> <ArrowDropDownIcon /></li>
           </ul>
         </div>
       </div>
