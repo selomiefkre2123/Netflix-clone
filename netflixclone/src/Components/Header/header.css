@@ -1,11 +1,11 @@
 .header_outerContainer{
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: transparent; */
-    background-color: rgb(20,20,20);
+    background-color: transparent; 
     height: 10vh;
     color: white;
     transition: all 0.5s;
@@ -15,6 +15,16 @@
     z-index: 1;
     
 }
+.header_black {
+    background-color: rgba(20, 20, 20, 1);
+}
+
+.header_container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .leftside ul{
     width: 140%;
     display: flex;
@@ -22,7 +32,9 @@
     align-items: center;
     list-style: none;
     cursor: pointer;
-    /* background-color: lightblue; */
+}
+.leftside img{
+    width: 10vw;
 }
 .rightside ul{
     width: 120%;
@@ -31,11 +43,4 @@
     align-items: center;
     list-style: none;
     cursor: pointer;
-    /* background-color: lightblue; */
-}
-.header_container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }

@@ -7,7 +7,7 @@ import "./Banner.css";
 function truncate(str, n) {
   return str?.length > n ? str.substr(0, n - 1) + "..." : str;
 }
-// its shorten long movie descriptions-->If the text is longer than the limit n, it cuts it and adds "..."
+// shorten long descriptions-->If its longer than the limit n, it cuts it and adds "..."
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
@@ -16,16 +16,15 @@ const Banner = () => {
     (async ()=> {
       try{
            const request = await axios.get(requests.fetchNetflixOriginals);
-           console.log(request)
-           setMovie(request.data.results[
-          Math.floor(Math.random() * request.data.results.length)]);
+           console.log(request);
+           const results = request.data.results;
+           
+           setMovie(results[Math.floor(Math.random() * results.length)]
+           );
 
-        //   request.data.results is an array.
-
+        //  request.data.results is an array.
         //  Math.floor(Math.random() * request.data.results.length) gives a random index.
-
         //  request.data.results[randomIndex] returns one object from that array.
-
         //  setMovie() updates the state by storing that object.
         
       } catch(error){
